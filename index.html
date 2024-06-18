@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+
+
+
+    <!--======= STYLE SHEET =======-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ:wght@100..400&display=swap');
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to left, #D8B5FF, #1EAE98);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: "Albert Sans", sans-serif;
+
+
+        }
+
+        .head{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top: 2px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.2);
+            color: aqua;
+            cursor: auto;
+            font-weight:900;
+            font-size: x-large;
+        }
+
+        #intro{
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top: 2px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.1);
+            color: aqua; 
+            cursor: auto;
+            margin: 40px;
+            padding-left: 12px;
+        }
+
+        #EDU{
+            float: right;
+            width: 40px;
+            padding-left: 5px;
+            margin-right: 8px;
+            border: 2px solid black;
+            border-radius: 7px;
+            color: aqua;
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #EXP{
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 140px;
+            margin-top: 90px;
+            color: aqua;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin-left: 7px;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5)
+        }
+
+        #skills{
+            border: 2px solid black;
+            margin-top: 100px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+            border-radius: 7px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 4px;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: aqua;
+        }
+
+        .contact{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 60px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.1);
+        
+        }
+
+        a{
+            text-decoration: none;
+            color: aqua ;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        nav{
+            color: rgb(5, 5, 5);
+            margin-top: 50px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black ;
+        }
+
+        #mustafa{
+            color: black;
+            text-decoration-line: underline;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        #mustafa:hover{
+            opacity: 0.3s;
+            color: aqua;
+        }
+
+        #btn{
+            margin-left: 7px;
+            border: 1px solid aqua;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: larger;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+        }
+        #btn:hover{
+            background-color: aqua;
+            color: black;
+            border: 1px solid black;
+        }
+
+        #feedpara{
+            color: black;
+            border: 2px solid aqua;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 5px;
+            font-weight: bolder;
+            box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #textareaa{
+            border: black solid 2px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: aqua;
+            border-radius: 7px;
+            margin-left: 10px;
+            height: 100px;
+            width: 140px;
+            box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5) ;
+
+        }
+
+        #btn{
+            background-color: rgba(0, 0, 0, 0.2);
+            border: black solid 2px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            transform: translate(50%);
+            font-weight: 300;
+        }
+        #btn:hover{
+            background-color: aqua;
+            color: black;
+            border: 1px solid black;
+        }
+
+        #textareaa:hover{
+            border-color: aqua;
+        }
+
+        #copy{
+            margin: 17x;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <div class="head">
+    Personal Portfolio
+  </div>
+  <fieldset id="intro" >
+    <legend style="font-size: larger; font-weight: bolder; color: black;">Introduction</legend>
+    Name:&nbsp; MUSTAFA(div) <br>
+    Age:&nbsp; 20 <br>
+    Nationality:&nbsp; Pakistan
+  </fieldset>
+  <fieldset id="EDU">
+    <legend style="font-size: larger; font-weight: bolder; color: black;">Education</legend>
+    <li>Matric</li>
+    Institute:&nbsp; MC Higher seceondary school <br> <br>
+    <li>FA&nbsp; (IT)</li>
+    Institute:&nbsp; IT Institute of FAISALABAD <br>
+  </fieldset>
+  <fieldset id="EXP">
+    <legend  style="font-size: larger; font-weight: bolder; color: black; ">Experience</legend>
+    Total Experience: Having total 1 year of experience and 3 month of internship
+  </fieldset>
+  <article id="skills">
+    <p style="font-weight: bolder; font-size:larger; color: black; text-decoration-line: underline;">Skils:</p>
+    <p>I am frontend and backend developer and also have basic knowledge of NON-SQL</p>
+    <p>I have strong grip on <b style="text-decoration-line: underline; font-size: larger; " >HTML, CSS, script.js</b></p>
+  </article> 
+  <div class="contact">
+    <h2 style="padding-left: 20px;">Contact info</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61559472034563" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/mustafa.div99/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/gulam-mustafa-795a0a311" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/MustafaDiv" target="_blank">Github</a></li>
+            <li><a href="#">Whatsapp</a></li>
+        </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="credit">
+    <p style="color:aqua; padding-left: 10px; border: 2px solid black; width: 210px; height: 19px; margin-left: 10px; border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); background-color: rgba(0, 0, 0, 0.2);">Page coded by <b id="mustafa">MUSTAFA</b></p>
+  </div>
+  <br>
+  <br>
+  <div class="feedback">
+    <form action="action.php">
+        <p id="feedpara">Send me feedback or how was page experience</p>
+    <textarea id="textareaa"></textarea>
+    <input type="submit" value="SEND" id="btn">
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p id="copy" >&copy;Copyright 2022-2024. All Rights Reserved</p>
+</body>
+</html>
